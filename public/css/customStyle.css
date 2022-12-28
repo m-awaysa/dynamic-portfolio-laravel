@@ -1,0 +1,291 @@
+:root{
+--yelow-1 :rgb(255, 196, 0);
+--shiny-purple-1 :  rgb(136, 9, 68);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+table{
+  width:100% !important;
+  color: white;
+  font-size: 1em;
+  
+ }
+
+ table th {
+   color: black !important;
+   background-color: lightblue !important;
+   text-align: center;
+
+ }
+ table tr{
+  text-align: center;
+
+ }
+ table th,
+ table td{
+
+  padding: 12px 15px !important;
+  
+ }
+
+ 
+body.public.home{
+  background-image: url("/images/black_galaxy.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+
+ }
+ .shining-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+ }
+ a {
+  text-decoration: none;
+
+  font-size: 24px;
+
+}
+
+p.shining-text {
+  font-weight: 700;
+  text-align: center;
+  font-size: 40px;
+  font-family: Hack, sans-serif;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  letter-spacing: 5px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: shine 5s linear infinite;
+  position: relative;
+}
+
+@keyframes shine {
+  0% {
+    background-position-x: -500%;
+  }
+  100% {
+    background-position-x: 500%;
+  }
+}
+
+
+.public-navbar{
+  all: none;
+}
+h4.name{
+  
+ color: var(--yelow-1);
+  
+}
+
+
+
+ div.deteals{
+  margin-top: 10%;
+  color: var(--yelow-1);
+}
+
+.img-group.container{
+position: relative;
+ float: right;
+ width: 50%;
+ text-align: right;
+ 
+
+}
+
+img.white-robot {
+  position: relative;
+  margin-right: 30%;
+  left: 50%;
+  transform: translate(-50%);
+  display: none;
+
+}
+
+.info{
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+img.black-robot {
+  position: relative;
+  margin-right: 30%;
+  left: 50%;
+  transform: translate(-50%);
+ 
+}
+
+
+.img-group:hover .black-robot {
+  display: none;
+}
+.img-group:hover .white-robot{
+    display: inline;
+  }
+
+.card.public
+{
+ background: none !important;
+ border: none !important;
+ width: 20rem !important;
+ overflow: hidden !important;
+ transition: transform 500ms ease;
+
+}
+
+.card.public:hover{
+  transform: scale(1.05);
+}
+
+
+
+.my-text-body{
+ position: relative;
+ 
+ height: 200px;
+
+}
+.card-title.public{
+  position: relative;
+  width: max-content;
+
+}
+.card-title.public::after{
+  content: "";
+  position :absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  bottom: -2px;
+  width: 100%;
+  background-color: rgb(4, 146, 11);
+ 
+  transition: transform 500ms ease;
+
+}
+.card.public:hover .card-title.public::after{
+
+transform: scaleX(1);
+
+}
+a{
+  color: blue;
+  text-decoration: none !important;
+}
+@media (hover) {
+  .my-text-body{
+    transform: translateY(80%);
+    transition: transform 500ms ease;
+  }
+  .card-text-name{
+    transform: translateY(300%);
+
+  }
+  .card-title.public::after{
+    transform: scaleX(0);
+  }
+  
+}
+
+
+ a.button{
+  text-decoration: none;
+  position: absolute;
+  left:    2%;
+  bottom:   10%;
+
+ }
+  a.button:hover,
+  a.button:focus{
+    background-color:var(--shiny-purple-1);
+    border: none;
+  }
+
+  .card.public:hover .my-text-body,
+  .card.public:hover .card-text-name
+  {
+    transform: translateY(0);
+    background: hsl(0 0% 0% /0.5);
+
+  }
+
+  img.card-img.public-img
+  {
+    width: 297px !important;
+    height: 200px !important;
+  }
+  div.all-project{
+   position: relative;
+    left: 50% !important;
+   transform: translate(-50%);
+    
+  }
+
+.mail-item{
+  background: none;
+  padding: 0.5rem;
+  color: white;
+  
+}
+div.mail-group ::placeholder { 
+  color: var(--yelow-1) !important;
+ 
+}
+img.moon{
+ 
+  float: left;
+  width: 25rem;
+  height: 25rem;
+  top: 0;
+  left: 0;
+  
+}
+.mail-label{
+  color: #fff;
+}
+
+table.contact-info td{
+
+  color: white;
+ 
+}
+table.contact-info th
+{
+  background: none !important;
+  background-color: none !important;
+ 
+  color: rgb(165, 162, 4) !important;
+  margin-top: 11rem !important;
+}
+
+p.card-text.admin{
+  transform: translateY(0%);
+  height: 5rem;
+  overflow: hidden;
+}
+
+@media(max-width: 992px){
+
+  .info{
+    position: relative;
+left: 0%;
+transform: translate(0%);
+  }
+  
+
+
+}
