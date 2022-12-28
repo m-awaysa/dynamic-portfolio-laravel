@@ -1,45 +1,65 @@
-**Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**
 
-When you're done, you can delete the content in this README and update the file with details for others getting started with your repository.
-
-*We recommend that you open this README in another tab as you perform the tasks below. You can [watch our video](https://youtu.be/0ocf7u76WSo) for a full demo of all the steps in this tutorial. Open the video in a new tab to avoid leaving Bitbucket.*
-
----
-
-## Edit a file
-
-You’ll start by editing this README file to learn how to edit a file in Bitbucket.
-
-1. Click **Source** on the left side.
-2. Click the README.md link from the list of files.
-3. Click the **Edit** button.
-4. Delete the following text: *Delete this line to make a change to the README from Bitbucket.*
-5. After making your change, click **Commit** and then **Commit** again in the dialog. The commit page will open and you’ll see the change you just made.
-6. Go back to the **Source** page.
-
----
-
-## Create a file
-
-Next, you’ll add a new file to this repository.
-
-1. Click the **New file** button at the top of the **Source** page.
-2. Give the file a filename of **contributors.txt**.
-3. Enter your name in the empty file space.
-4. Click **Commit** and then **Commit** again in the dialog.
-5. Go back to the **Source** page.
-
-Before you move on, go ahead and explore the repository. You've already seen the **Source** page, but check out the **Commits**, **Branches**, and **Settings** pages.
-
----
-
-## Clone a repository
-
-Use these steps to clone from SourceTree, our client for using the repository command-line free. Cloning allows you to work on your files locally. If you don't yet have SourceTree, [download and install first](https://www.sourcetreeapp.com/). If you prefer to clone from the command line, see [Clone a repository](https://confluence.atlassian.com/x/4whODQ).
-
-1. You’ll see the clone button under the **Source** heading. Click that button.
-2. Now click **Check out in SourceTree**. You may need to create a SourceTree account or log in.
-3. When you see the **Clone New** dialog in SourceTree, update the destination path and name if you’d like to and then click **Clone**.
-4. Open the directory you just created to see your repository’s files.
-
-Now that you're more familiar with your Bitbucket repository, go ahead and add a new file locally. You can [push your change back to Bitbucket with SourceTree](https://confluence.atlassian.com/x/iqyBMg), or you can [add, commit,](https://confluence.atlassian.com/x/8QhODQ) and [push from the command line](https://confluence.atlassian.com/x/NQ0zDQ).
+<div class="container">
+    <div class="mt-5">
+        <h2>Admin account:</h2>
+        <h5 class="text-success">Email:my@my.com</h5>
+        <h5 class="text-success">Password:123456789</h5>
+        <h6 class="text-danger ">*The website will refresh at 00:00 AM (GMT+2) every day, all changes will be removed or
+            you can refresh the website from the dashboard*</h6>
+        <h2>Brief about the site:</h2>
+        <p>a portfolio website to your skills and projects, your social links and contact info, and allowing visitors to
+            send you emails via a contact form from the website. </p>
+        <h3>Admin Panel</h3>
+        <p>Admin users should be able to manage the website content adding projects, skills, contact info and any other
+            social media and git accounts.</p>
+        <h5>1. Skills</h5>
+        <ol class=" list-group-numbered">
+            <li class="list-group-item">- List saved skills, add new skill, edit existing skill, delete a skill, hide or
+                show an existing category on the public portfolio website.</li>
+            <li class="list-group-item">- Skills can’t be deleted if it is attached to a project.</li>
+            <li class="list-group-item">- Deleting a skill here means an actual delete from database, not toggling a
+                flag. So, a confirmation message must be prompted to user to confirm deleting.</li>
+            <li class="list-group-item">Add and edit forms must have the following fields: Skill name, level of
+                experience (beginner, intermediate, expert), and show/hide toggle </li>
+        </ol>
+        <h5>2. Projects</h5>
+        <p>List saved projects, add a new project, edit existing project, delete existing project, hide or show project
+            on the public portfolio website. </p>
+        <ol class=" list-group-numbered">
+            <li class="list-group-item">Deleting a project here means an actual delete from database, not toggling a
+                flag. So, a confirmation message must be prompted to user to confirm deleting.
+            </li>
+            <li class="list-group-item">Add and edit forms must have the following fields:
+                <ol class=" list-group-numbered">
+                    <li class="list-group-item">Project Title.</li>
+                    <li class="list-group-item">Project description (long description).</li>
+                    <li class="list-group-item">Skills selected from a dropdown list loaded from the database
+                        dynamically.
+                    </li>
+                    <li class="list-group-item">Project link.
+                    </li>
+                    <li class="list-group-item">Screenshot of the project.
+                    </li>
+                    <li class="list-group-item">Show/ hide toggle. </li>
+                </ol>
+            </li>
+        </ol>
+        <h5>3. Contact info </h5>
+        <p>List saved contact info, add a new contact info, edit existing contact info, delete existing contact info,
+            hide or show contact info on the public portfolio website. </p>
+        <ol class=" list-group-numbered">
+            <li class="list-group-item">Deleting a contact info here means an actual delete from database, not toggling
+                a flag. So, a confirmation message must be prompted to user to confirm deleting. </li>
+            <li class="list-group-item">Add and edit forms must have the following fields:
+                <ol class=" list-group-numbered">
+                    <li class="list-group-item">Contact info title.</li>
+                    <li class="list-group-item">Contact info (phone, or mobile, or email, or a social media link, or git
+                        account link).</li>
+                    <li class="list-group-item">Font awesome icon class.
+                    </li>
+                    <li class="list-group-item">Show/ hide toggle </li>
+                </ol>
+            </li>
+        </ol>
+    </div>
+</div>
