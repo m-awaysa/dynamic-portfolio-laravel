@@ -15,7 +15,7 @@
     </div>
     <!-- Robot images Div -->
     <div class="img-group  d-none d-lg-block  col-6 mt-5">
-        <img class="white-robot ms-auto " src="{{ asset('images/whiterobot.png') }}">
+        <img class="white-robot ms-auto " src="{{ asset('images/pwhiterobot.png') }}">
         <img class="black-robot ms-auto " src="{{ asset('images/blackrobot.png') }}">
     </div>
 </div>
