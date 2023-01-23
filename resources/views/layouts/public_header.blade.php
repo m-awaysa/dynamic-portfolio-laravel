@@ -54,14 +54,7 @@
 
         </div>
     </nav>
-    <div class="col-12 shadow-1">
-        <div class="container text-center">
-            <a class="me-5 text-success fs-5" onClick='window.location="#aboutMe"'>About Me</a>
-            <a class="me-5 text-success fs-5" onClick='window.location="#skills"'>Skills</a>
-            <a class="me-5 text-success fs-5" onClick='window.location="#projects"'>Projects</a>
-            <a class="me-5 text-success fs-5" onClick='window.location="#contactMe"'>Contact Me</a>
-        </div>
-    </div>
+ 
 
     @yield('contant')
 

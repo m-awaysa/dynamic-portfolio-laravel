@@ -1,7 +1,14 @@
 @extends('layouts.public_header')
 
 @section('contant')
-
+<div class="col-12 shadow-1">
+    <div class="container text-center">
+        <a class="me-5 text-success fs-5" onClick='window.location="#aboutMe"'>About Me</a>
+        <a class="me-5 text-success fs-5" onClick='window.location="#skills"'>Skills</a>
+        <a class="me-5 text-success fs-5" onClick='window.location="#projects"'>Projects</a>
+        <a class="me-5 text-success fs-5" onClick='window.location="#contactMe"'>Contact Me</a>
+    </div>
+</div>
 
 <div id="aboutMe" class=" container row align-items-center info">
     <!-- hi div -->
@@ -15,7 +22,7 @@
     </div>
     <!-- Robot images Div -->
     <div class="img-group  d-none d-lg-block  col-6 mt-5">
-        <img class="white-robot ms-auto " src="{{ asset('images/pwhiterobot.png') }}">
+        <img class="white-robot ms-auto " src="{{ asset('images/whiterobot.png') }}">
         <img class="black-robot ms-auto " src="{{ asset('images/blackrobot.png') }}">
     </div>
 </div>

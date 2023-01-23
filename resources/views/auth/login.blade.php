@@ -12,17 +12,17 @@
 		<form action="{{route('login')}}" method="post">
 			@csrf
 			<div class="mb-3">
-				<label for="exampleInputEmail1" class="form-label text-warning">Email address</label>
-				<input type="email" class="form-control border border-warning @error('email') border-danger @enderror"
+				<label for="exampleInputEmail1" class="form-label text-light">Email address</label>
+				<input type="email" class="form-control border rounded-0  @error('email') border-danger @enderror"
 					name="email" value="{{ old('email') }}">
 				@error('email')
 				<div class="text-danger">{{$message}}</div>
 				@enderror
 			</div>
 			<div class="mb-3">
-				<label for="password" class="form-label text-warning">Password</label>
+				<label for="password" class="form-label text-light">Password</label>
 				<input type="password"
-					class="form-control border  border-warning @error('password') border-danger @enderror"
+					class="form-control border rounded-0 @error('password') border-danger @enderror"
 					name="password">
 				@error('password')
 				<div class="text-danger">{{$message}}</div>
